@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anta', sans-serif;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+.btn
+{
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.btn:hover
+{
+    background-color: black;
+    color: white;
+}
