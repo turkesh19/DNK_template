@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./cssss/global.css" />
+    <link rel="stylesheet" href="./cssss/style.css" />
+    <link rel="stylesheet" href="./cssss/productpage.css" />
+    <link rel="stylesheet" href="./cssss/Cart.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="open">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-content-left">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo1-free-img.png" alt="DNK logo" />
+        </a>
+        <ul class="links">
+          <li>
+            <a
+              class="link"
+              href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              target="_blank"
+              >EVERYTHING</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              target="_blank"
+              >WOMEN</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              target="_blank"
+              >MEN</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              target="_blank"
+              >ACCESSORIES</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-content-right">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              >LOGIN</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              >REGISTER</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/shorts/XOChcrPX4c0?feature=share"
+              >CART</a
+            >
+          </li>
+          <li><i class="fa-solid fa-bag-shopping"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="Cart">
+      <div class="container">
+        <h1>Items In Cart</h1>
+        <div class="CartItems">
+          <table class="ItemTable" border="1">
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </table>
+          <div class="grand-total-container">
+            <p class="grand-total">
+              Grand Total (incl. 13% VAT): $<span id="grandTotal"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-hr" />
+    <div class="footer">
+      <div class="container">
+        <div class="footer-contents">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="./images/logo/logo@2x-free-img.png" alt="Footer Logo" />
+            </div>
+            <p>The best look anytime, anywhere.</p>
+          </div>
+          <div class="footer-content">
+            <h3>For Her</h3>
+            <ul class="footer-items">
+              <li>Women Jeans</li>
+              <li>Tops and Shirts</li>
+              <li>Women Jackets</li>
+              <li>Heels and Flats</li>
+              <li>Women Accessories</li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3>For Him</h3>
+            <ul class="footer-items">
+              <li>Men Jeans</li>
+              <li>Men Shirts</li>
+              <li>Men Shoes</li>
+              <li>Men Accessories</li>
+              <li>Men Jackets</li>
+            </ul>
+          </div>
+          <div class="footer-content">
+            <h3>Subscribe</h3>
+            <form>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your email address...."
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="container">
+        <div class="copyright">
+          <div class="contents">
+            <p>Copyright © 2024 Turkesh. Powered by Turkesh.</p>
+          </div>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-google"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      const products = [
+        {
+          id: 1,
+          name: "Boho Bangle Bracelet",
+          category: "Accessories",
+          img: "./images/card/product-accessory1-400x400.jpg",
+          price: 250,
+        },
+        {
+          id: 2,
+          name: "Anchor Bracelet",
+          category: "Accessories",
+          img: "./images/card/product-accessory2-400x400.jpg",
+          price: 320,
+        },
+        {
+          id: 3,
+          name: "Light Brown Purse",
+          category: "Accessories",
+          img: "./images/card/product-bag1-400x400.jpg",
+          price: 290,
+        },
+        {
+          id: 4,
+          name: "Dark Brown Jeans",
+          category: "Men",
+          img: "./images/card/product-m-jeans1-400x400.jpg",
+          price: 370,
+        },
+        {
+          id: 5,
+          name: "Blue Denim Shorts",
+          category: "Women",
+          img: "./images/card/product-w-jeans1-400x400.jpg",
+          price: 230,
+        },
+        {
+          id: 6,
+          name: "DNK Blue Shoes",
+          category: "Men",
+          img: "./images/card/sports-shoe1-400x400.jpg",
+          price: 280,
+        },
+        {
+          id: 7,
+          name: "Basic Gray Jeans",
+          category: "Women",
+          img: "./images/card/product-w-jeans4-400x400.jpg",
+          price: 300,
+        },
+        {
+          id: 8,
+          name: "DNK Yellow Shoes",
+          category: "Accessories",
+          img: "./images/card/sports-shoe3-400x400.jpg",
+          price: 260,
+        },
+        {
+          id: 9,
+          name: "Bright Red Bag",
+          category: "Accessories",
+          img: "./images/card/product-bag3-400x400.jpg",
+          price: 340,
+        },
+        {
+          id: 10,
+          name: "Blue Denim Jeans",
+          category: "Women",
+          img: "./images/card/product-w-jeans2-400x400.jpg",
+          price: 380,
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let cartItem = JSON.parse(localStorage.getItem("items"));
+        let cartItemCount = cartItem ? cartItem.length : 0;
+        let cartIcon = document.querySelector(".fa-bag-shopping");
+        cartIcon.insertAdjacentHTML("beforeend", ` [${cartItemCount}]`);
+
+        let table = document.querySelector(".ItemTable");
+        let cartItems = JSON.parse(localStorage.getItem("items"));
+        let addedProducts = {};
+
+        let grandTotal = 0; // Initialize grand total outside the loop
+
+        products.forEach((product) => {
+          if (cartItems.includes(product.id) && !addedProducts[product.id]) {
+            let totalPrice = product.price * 1.13; // Adding 13% VAT
+            let productHtml = `<tr>
+                            <td>
+                              <img style="width: 200px; height: 200px" src="${
+                                product.img
+                              }" alt="" />
+                            </td>
+                            <td>1</td>
+                            <td>$${product.price}</td>
+                            <td>$${totalPrice.toFixed(2)}</td>
+                          </tr>`;
+            table.innerHTML += productHtml;
+            addedProducts[product.id] = true;
+
+            grandTotal += totalPrice; // Add each product's total price to grand total
+          }
+        });
+
+        // Display grand total
+        let grandTotalElement = document.getElementById("grandTotal");
+        grandTotalElement.textContent = grandTotal.toFixed(2);
+      });
+    </script>
+  </body>
+</html>

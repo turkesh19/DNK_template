@@ -30,6 +30,22 @@
     background-color: black;
     color: white;
 }
+.btnprimary
+{
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0075be;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.btnprimary:hover
+{
+    filter: brightness(80%);
+}
 .bg-container
 {
     max-width: 1350px;

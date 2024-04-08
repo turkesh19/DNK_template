@@ -1,0 +1,33 @@
+.ItemTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add space above the table */
+}
+.ItemTable th,
+.ItemTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.ItemTable th {
+  background-color: #f2f2f2;
+}
+.ItemTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.ItemTable tr:hover {
+  background-color: #ddd;
+}
+.ItemTable img {
+  max-width: 100px;
+  max-height: 100px;
+}
+/* Add space between elements */
+.Cart {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
